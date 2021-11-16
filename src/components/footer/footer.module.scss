@@ -1,0 +1,33 @@
+@import "../../styles/mixins.scss";
+
+.footerWrapper {
+  @include flex(row, center, space-between);
+  // @include wh-100p;
+  width: 100%;
+  max-height: 10rem;
+  background-color: $background-secondary;
+  .footerCoreWrapper {
+    @include flex(row, center, center);
+    // @include appLeftRightPadding;
+    padding: 1rem 2.2rem;
+    @include wh-100p;
+
+    .copyright {
+      h3 {
+        color: $background-primary;
+        font-size: 16px;
+      }
+    }
+    .mediaIcons {
+      justify-items: flex-end;
+      column-gap: 20px;
+      @include flex(row, center, flex-start, 20px);
+
+      fab {
+        width: 100%;
+        height: 100%;
+        color: white;
+      }
+    }
+  }
+}

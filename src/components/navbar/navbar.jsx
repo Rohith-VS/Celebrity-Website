@@ -1,23 +1,28 @@
 import React from "react";
 import styles from "./navbar.module.scss";
 import logo from "../../images/brandLogo.svg";
+import { Link, useHistory } from "react-router-dom";
 const Navbar = () => {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/");
+  };
   return (
     <div className={styles.navbarWrapper}>
       <div className={styles.navItemWrapper}>
-        <div className={styles.brandLogo}>
+        <div className={styles.brandLogo} onClick={handleClick}>
           <img className={styles.brandImage} src={logo} alt="CR7" />
         </div>
         <div className={styles.navLinks}>
-          <a className={styles.link} href="">
+          <Link className={styles.link} to="/bio">
             BIO
-          </a>
-          <a className={styles.link} href="">
-            NEWS
-          </a>
-          <a className={styles.link} href="">
+          </Link>
+          <Link className={styles.link} to="/fixtures">
+            FIXTURES
+          </Link>
+          <Link className={styles.link} to="">
             MEDIA
-          </a>
+          </Link>
         </div>
       </div>
     </div>

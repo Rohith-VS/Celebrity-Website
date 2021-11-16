@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.newsWrapper {
+  @include wh-100p;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  @include flex(column, center, space-between);
+
+  .newsCoreWrapper {
+    @include appLeftRightPadding;
+    @include flex(column, flex-start, space-between, 10px);
+
+    .newsTitle {
+      @include flex(column, center, center);
+      h1 {
+        font-size: 36px;
+      }
+    }
+    .newsBody {
+      @include flex(column, flex-start, flex-start);
+
+      h2 {
+        padding-bottom: 16px;
+        padding-top: 10px;
+        font-size: 24px;
+      }
+    }
+  }
+}

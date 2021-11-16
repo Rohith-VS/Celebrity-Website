@@ -13,6 +13,7 @@
     .brandLogo {
       width: 6rem;
       height: 4.5rem;
+      cursor: pointer;
       .brandImage {
         @include wh-100p;
       }
@@ -21,16 +22,16 @@
     .navLinks {
       justify-items: flex-end;
       column-gap: 80px;
-      @include flex(row, center, flex-start,5rem);
+      @include flex(row, center, flex-start, 5rem);
 
-      .link{
+      .link {
         text-decoration: none;
         color: $background-primary;
-        font-size: 18px;  //$font-size-primary;
+        font-size: 18px; //$font-size-primary;
         font-weight: 500;
 
-        &:hover{
-          color: 	#8a8a8a; //$background-contrast;
+        &:hover {
+          color: #8a8a8a; //$background-contrast;
         }
       }
     }

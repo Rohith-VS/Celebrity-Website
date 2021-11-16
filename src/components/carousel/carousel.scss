@@ -1,0 +1,27 @@
+@import "../../styles/mixins.scss";
+
+.img{
+  width: 900px;
+  height: 580px;
+  margin: auto;
+  //
+}
+.title1{
+  font-size: 48px;
+  color: #fafafa;
+}
+.title1p{
+  font-size: 24px;
+  color: #fafafa;
+}
+.title{
+  font-size: 48px;
+  color: #201e1e;
+}
+.titlep{
+  font-size: 24px;
+  color: #201e1e;
+}
+// .img {
+//   @include wh-100p;
+// }

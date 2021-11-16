@@ -35,7 +35,10 @@ body {
   background-color: $background-primary;
   @include largeScreenTypography;
 }
-
+.fab{
+  color: white;
+  font-size: 10px;
+}
 // base icon color for svg icons
 .base-icon-color {
   fill: $logo-primary-color;

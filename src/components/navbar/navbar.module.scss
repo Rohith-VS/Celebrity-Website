@@ -1,0 +1,38 @@
+@import "../../styles/colors.scss";
+@import "../../styles/mixins.scss";
+
+.navbarWrapper {
+  @include flex(row, center, space-between);
+  @include wh-100p;
+  background-color: $background-secondary;
+
+  .navItemWrapper {
+    @include flex(row, center, space-between);
+    @include appLeftRightPadding;
+    @include wh-100p;
+    .brandLogo {
+      width: 6rem;
+      height: 4.5rem;
+      .brandImage {
+        @include wh-100p;
+      }
+    }
+
+    .navLinks {
+      justify-items: flex-end;
+      column-gap: 80px;
+      @include flex(row, center, flex-start,5rem);
+
+      .link{
+        text-decoration: none;
+        color: $background-primary;
+        font-size: 18px;  //$font-size-primary;
+        font-weight: 500;
+
+        &:hover{
+          color: 	#8a8a8a; //$background-contrast;
+        }
+      }
+    }
+  }
+}
